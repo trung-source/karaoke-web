@@ -1,0 +1,26 @@
+    
+#booking{
+    // :root {
+    //     --primary: #FEA116;
+    //     --light: #F1F8FF;
+    //     --dark: #0F172B;
+    // }
+    
+    .page-header {
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .page-header-inner {
+        background: rgba(15, 23, 43, .7);
+    }
+    // .breadcrumb-item + .breadcrumb-item::before {
+    //     color: var(--light);
+    // }
+
+    .section-title {
+        position: relative;
+        display: inline-block;
+    }
+    
+}

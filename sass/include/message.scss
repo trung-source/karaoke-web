@@ -1,0 +1,45 @@
+.message{
+    position: sticky;
+    top:0;
+    margin:0 auto;
+    max-width: 1200px;
+    background-color: var(--white);
+   //  padding:0.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 10000;
+    gap:0rem;
+ 
+ 
+ span{
+    font-size: 01.4rem;
+    color:var(--black);
+ }
+
+ span:hover{
+ background-color: yellow;
+}
+ 
+ i{
+    cursor: pointer;
+    color:var(--red);
+    font-size: 01.4rem;
+ }
+ 
+i{
+   padding:5px;
+   animation: spin 5s linear infinite;
+}
+
+i:hover{
+   animation-duration:1s;
+}
+
+
+@keyframes spin{
+ 100% { transform: rotate(-360deg); }
+}
+
+
+}

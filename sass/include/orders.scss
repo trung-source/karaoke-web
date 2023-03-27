@@ -1,0 +1,31 @@
+.placed-orders {
+    .box-container{
+    max-width: 1200px;
+    margin:0 auto;
+    display:flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap:1.5rem;
+
+    
+    .box{
+        flex:1 1 40rem;
+        border-radius: .5rem;
+        padding:2rem;
+        // border:var(--border);
+        background-color: #f5f5f5;
+        padding:1rem 2rem;
+        p{
+            padding:1rem 0;
+            font-size: 2rem;
+            color:(#666);
+         }
+         span{
+            color:(#8e44ad);
+         }
+     }
+     .empty{
+        flex:1;
+     }
+ }
+}

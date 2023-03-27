@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Karaoke</title>
+    
+    <!-- Booststrap CDN -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+
+    <!-- Owl Carousel 2 CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.css" integrity="sha512-UTNP5BXLIptsaj5WdKFrkFov94lDx+eBvbKyoe1YAfjeRPC+gT5kyZ10kOHCfNZqEui1sxmqvodNUx3KbuYI/A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+    <!-- Tempusdominus -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tempusdominus-bootstrap-4/5.39.0/css/tempusdominus-bootstrap-4.css" integrity="sha512-ClXpwbczwauhl7XC16/EFu3grIlYTpqTYOwqwAi7rNSqxmTqCpE8VS3ovG+qi61GoxSLnuomxzFXDNcPV1hvCQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    <!-- animate: For wow -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.compat.min.css" integrity="sha512-b42SanD3pNHoihKwgABd18JUZ2g9j423/frxIP5/gtYgfBz/0nDHGdY/3hi+3JwhSckM3JLklQ/T6tJmV7mZEw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Font-awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+
+
+    <!-- Timelocate -->
+    
+
+
+</head>
+
+<body>
+    <!-- m-o:margin=0; justtify-content-between px4 py1: khoang cach cua bg; -->
+    <!-- border-left: tao dai ngan cach phia ben trai; text-dark: doi mau chu -->
+    <!-- start #header -->
+    <header id="header">
+        <div class="strip d-flex justify-content-between px-4 py-1 bg-light">
+            <p class="font-rale font-size-14 text-black-50 m-0">Hoang Quoc Viet - Bac Tu Liem - Ha Noi - 0979797979</p>
+            <div class="font-rale font-size-14"></div>
+            <a href="#" class="px-3 border-right border-left text-dark">Login</a>
+            <a href="#" class="px-3 border-right border-left text-dark">Sign up</a>
+            <a href="#" class="px-3 border-right text-dark">Whishlist (0)</a>
+            
+        </div>
+        <!-- Primmary Navigation -->
+        <nav class="navbar navbar-expand-lg navbar-dark color-second-bg">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="index.html">Karaoke</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav m-auto font-rubik">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Đặt phòng</a>
+                  </li>
+                  <li class="nav-item">
+                      <!-- fa-chevron-down: icon mui ten chi xuong duoi -->
+                    <a class="nav-link" href="#">Sự kiện<i class="fas fa-chevron-down"></i></a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link"  href="#">Quản lý</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Reviews</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Liên hệ</a>
+                  </li>
+                </ul>
+                <!-- rounded-pill: lam tron khung; fas: font awesome; -->
+                <form action="#" class="font-size-14 font-rale">
+                    <a href="#" class="py-2 rounded-pill color-primary-bg">
+                        <span class="font-size-16 px-2 text-white"><i class="fas fa-shopping-cart"></i></span>
+                        <span class="px-3 py-2 rounded-pill text-dark bg-light">0</span>
+                    </a>
+                </form>
+              </div>
+            </div>
+          </nav>
+ <!-- Spinner Start -->
+ <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+    <div class="spinner-border text-primary" style="width: 3rem; height: 3rem;" role="status">
+        <span class="sr-only">Loading...</span>
+    </div>
+</div>
+<!-- Spinner End -->
+
+
+
+    </header>
+    <!-- !start #header -->
+
+
+    <!-- start #main-site -->
+    <main id="main-site">
+        
+        <!-- Owl-carousel -->
+        <section id="banner-area">
+            <div class="owl-carousel owl-theme">
+                <div class="item">
+                    <img src="./assets/1.jpg" height="400px" alt="Banner1">
+                </div>
+                <div class="item">
+                    <img src="./assets/2.jpg"  height="400px" alt="Banner2">
+                </div>
+                <div class="item">
+                    <img src="./assets/3.jpg" height="400px" alt="Banner3">
+                </div>
+            </div>
+        </section>
+        <!-- !Owl-carousel -->
+
+
+
+        <!-- Contact -->
+        <!-- header -->
+        <header class = "flex header-sm">
+            <div class = "container">
+                <div class = "header-title">
+                    <h1>Contact</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus rerum maxime enim odit illum in molestias beatae doloremque, ratione optio.</p>
+                </div>
+            </div>
+        </header>
+        <!-- header -->
+
+        <!-- contact section -->
+        <section id = "contact" class = "py-4">
+            <div class = "container">
+                <div class = "title-wrap">
+                    <span class = "sm-title">get in touch with us</span>
+                    <h2 class = "lg-title">contact us</h2>
+                </div>
+
+                <div class = "contact-row">
+                    <div class = "contact-left">
+                        <form class = "contact-form">
+                            <input type = "text" class = "form-control" placeholder="Your name">
+                            <input type = "email" class = "form-control" placeholder="Your email">
+                            <textarea rows = "4" class = "form-control" placeholder="Your message" style = "resize: none;"></textarea>
+                            <input type = "submit" class = "btn" value = "Send message">
+                        </form>
+                    </div>
+                    <div class = "contact-right my-2">
+                        <div class = "contact-item">
+                            <span class = "contact-icon flex">
+                                <i class = "fa fa-phone-alt"></i>
+                            </span>
+                            <div>
+                                <span>Phone</span>
+                                <p class = "text">+01-584-886-009</p>
+                            </div>
+                        </div>
+                        <div class = "contact-item">
+                            <span class = "contact-icon flex">
+                                <i class = "fa fa-map-marked-alt"></i>
+                            </span>
+                            <div>
+                                <span>Address</span>
+                                <p class = "text">102 East 22nd Street, NY</p>
+                            </div>
+                        </div>
+                        <div class = "contact-item">
+                            <span class = "contact-icon flex">
+                                <i class = "fa fa-envelope"></i>
+                            </span>
+                            <div>
+                                <span>Message</span>
+                                <p class = "text">info@tripboss.com</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- end of contact section -->
+
+
+
+        <!-- !Contact -->
+
+
+
+
+
+        <!-- Blogs -->
+
+      
+        <section id="blogs">
+            <div class="container py-4"></div>
+            <h4 class="font-rubik font-size-20 ml-3">Sự kiện mới</h4>
+            <hr>
+
+            <div class="owl-carousel owl-theme ml-5 mb-3">
+
+                <!-- Blog 1 -->
+                <div class="item">
+                    <div class="card border-0 font-rale mr-5" style="width: 18rem;">
+                        <h5 class="card-title font-size-16">Blogs 1</h5>
+                        <img src="./assets/review/blog1.jpg" alt="cart image" class="card-img-top">
+                        <p class="card-text font-size-14 text-black-50 py-1">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Assumenda aspernatur veritatis consequuntur repellat, praesentium cum quibusdam at in corporis eligendi quis eius ratione, nesciunt id hic optio velit natus! Voluptatibus!</p>
+                        <a href="#" class="color-second text-left">Go</a>
+                    </div>
+                </div>
+
+                <!-- Blog 2 -->
+                <div class="item">
+                    <div class="card border-0 font-rale mr-5" style="width: 18rem;">
+                        <h5 class="card-title font-size-16">Blogs 2</h5>
+                        <img src="./assets/review/blog2.jpg" alt="cart image" class="card-img-top">
+                        <p class="card-text font-size-14 text-black-50 py-1">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Assumenda aspernatur veritatis consequuntur repellat, praesentium cum quibusdam at in corporis eligendi quis eius ratione, nesciunt id hic optio velit natus! Voluptatibus!</p>
+                        <a href="#" class="color-second text-left">Go</a>
+                    </div>
+                </div>
+                
+                <!-- Blog 3 -->
+                <div class="item">
+                    <div class="card border-0 font-rale mr-5" style="width: 18rem;">
+                        <h5 class="card-title font-size-16">Blogs 3</h5>
+                        <img src="./assets/review/blog3.jpg" alt="cart image" class="card-img-top">
+                        <p class="card-text font-size-14 text-black-50 py-1">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Assumenda aspernatur veritatis consequuntur repellat, praesentium cum quibusdam at in corporis eligendi quis eius ratione, nesciunt id hic optio velit natus! Voluptatibus!</p>
+                        <a href="#" class="color-second text-left">Go</a>
+                    </div>
+                </div>
+
+
+            </div>
+        </section>
+
+   
+
+        <!-- !Blogs -->
+
+
+
+
+    </main>
+    <!-- !start #main-site -->
+
+
+
+
+
+    <!-- start #footer -->
+    <footer id="footer" class="bg-dark text-white py-5">
+        <div class="containter">
+            <div class="row">
+                <div class="col-lg-4 col-12">
+                    <h4 class="font-rubik font-size-20">Mobile Shopee</h4>
+                    <p class="font-size-14 font-rale text-white-50">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Distinctio odio fugiat, voluptas quaerat cumque alias libero explicabo, ducimus corrupti quam fugit, enim architecto amet numquam laudantium reprehenderit quis veritatis ad?</p>
+                </div>
+
+                <div class="col-lg-7 col-12">
+                    <h4 class="font-rubik font-size-20">Newslatter</h4>
+                    <form class="form-row">
+                        <div class="col">
+                            <input type="text" class="form-control" placeholder="Email *">                            
+                        </div>
+
+                        <div class="col">
+                            <button type="submit" class="btn btn-primary mb-2">Subscribe</button>
+                        </div>
+
+                        <div class="col-lg-4 col-12">
+                            <h4 class="font-rubik font-size-20">Information</h4>
+                            <div class="d-flex flex-column flex-wrap">
+                                <a href="#" class="font-rale font-size-14 text-white-50 pb-1">About us</a>
+                                <a href="#" class="font-rale font-size-14 text-white-50 pb-1">Delivery information</a>
+                                <a href="#" class="font-rale font-size-14 text-white-50 pb-1">Privacy Policy</a>
+                                <a href="#" class="font-rale font-size-14 text-white-50 pb-1">Terms & Conditions</a>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-3 col-12">
+                            <h4 class="font-rubik font-size-20">Account</h4>
+                            <a href="#" class="font-rale font-size-14 text-white-50 pb-1">My Account</a>
+                                <a href="#" class="font-rale font-size-14 text-white-50 pb-1">Order History</a>
+                                <a href="#" class="font-rale font-size-14 text-white-50 pb-1">Wish List</a>
+                                <a href="#" class="font-rale font-size-14 text-white-50 pb-1">Newslatter</a>
+
+                        </div>
+                        
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </footer>
+
+    <div class="copyright text-center bg-dark text-white py-4">
+        <p class="font-rale font-size-20">&copy: Copyrights 2022: Design By Trung</p>
+    </div>
+    <!-- !start #footer -->
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous"></script>
+    
+
+
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.22.2/moment-with-locales.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/moment-timezone/0.5.21/moment-timezone-with-data-2012-2022.min.js"></script>
+    
+    
+    
+    
+    <!-- Owl Carousel js file -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    
+    <!-- TempusDominus -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tempusdominus-bootstrap-4/5.39.0/js/tempusdominus-bootstrap-4.min.js" integrity="sha512-k6/Bkb8Fxf/c1Tkyl39yJwcOZ1P4cRrJu77p83zJjN2Z55prbFHxPs9vN7q3l3+tSMGPDdoH51AEU8Vgo1cgAA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    
+    <!-- isotop plugin cdn-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.min.js" integrity="sha512-Zq2BOxyhvnRFXu0+WE6ojpZLOU2jdnqbrM1hmVdGzyeCa1DgM3X5Q4A/Is9xA1IkbUeDd7755dNNI/PzSf2Pew==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+
+    
+    <!-- wow -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js" integrity="sha512-Eak/29OTpb36LLo2r47IpVzPBLXnAMPAVypbSZiZ4Qkf8p/7S/XRG5xp7OKWPPYfJT6metI+IORkR5G8F900+g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+
+    
+    <!-- Custom JavaScript -->
+    <script src="./index.js"></script>
+    <script>
+        // play/pause video
+        let video = document.querySelector('.video-wrapper video');
+        document.getElementById('play-btn').addEventListener('click', () => {
+            if(video.paused){
+                video.play();
+            } else {
+                video.pause();
+            }
+        });
+    </script>
+
+
+</body>
+</html>
+
+
